@@ -17,7 +17,7 @@ export default createGlobalStyle`
   
   a {
     text-decoration: none;
-    color: #fff;
+    color: #000;
   }
 
   ul, li {

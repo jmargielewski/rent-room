@@ -1,15 +1,15 @@
 import React, { PureComponent } from 'react';
 
-class RoomsPage extends PureComponent {
+class ProfilePage extends PureComponent {
   render() {
     const { match } = this.props;
     return (
       <div>
-        Page Room with id:
+        Profile with id:
         <b>{match.params.id}</b>
       </div>
     );
   }
 }
 
-export default RoomsPage;
+export default ProfilePage;

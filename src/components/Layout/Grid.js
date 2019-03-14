@@ -8,7 +8,8 @@ const getWidthStrings = (span) => {
 
 const Container = styled.div`
   width: 100%;
-  max-width: 960px;
+  max-width: 1160px;
+  padding-top: 30px;
   margin: auto;
 `;
 
