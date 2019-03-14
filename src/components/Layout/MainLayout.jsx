@@ -1,13 +1,11 @@
 import React from 'react';
+import { Container } from './Grid';
 import Header from '../Header/Header';
-import './mainLayout.css';
 
 const MainLayout = ({ children }) => (
   <div id="main-layout">
     <Header />
-    <main id="main-layout-body" className="main-layout-body">
-      {children}
-    </main>
+    <Container id="main-layout-body">{children}</Container>
   </div>
 );
 

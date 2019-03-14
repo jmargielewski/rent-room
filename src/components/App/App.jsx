@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import MainLayout from '../Layout/MainLayout';
 import RoomsPage from '../../containers/RoomsPage/RoomsPage';
 import RoomPage from '../../containers/RoomPage/RoomPage';
-import './app.css';
 
 const AppRoute = ({ component: Component, layout: Layout, ...rest }) => (
   <Route

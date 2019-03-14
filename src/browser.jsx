@@ -1,15 +1,16 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { render } from 'react-dom';
 import Root from './Root';
 import App from './components/App/App';
-import configureStore from './redux/configureStore';
+import GlobalStyle from './styles/global';
 import * as serviceWorker from './serviceWorker';
 
-const store = configureStore();
-
 render(
-  <Root store={store}>
-    <App />
+  <Root>
+    <Fragment>
+      <App />
+      <GlobalStyle />
+    </Fragment>
   </Root>,
   document.getElementById('root'),
 );

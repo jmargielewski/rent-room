@@ -1,13 +1,12 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
-import './header.css';
+import { HeaderPage, NavLink, Heading } from './HeaderStyles';
 
 const Header = () => (
-  <header className="site-header">
+  <HeaderPage className="site-header">
     <NavLink to="/">
-      <h1 className="site-heading">Rent room</h1>
+      <Heading>Rent room</Heading>
     </NavLink>
-  </header>
+  </HeaderPage>
 );
 
 export default Header;
