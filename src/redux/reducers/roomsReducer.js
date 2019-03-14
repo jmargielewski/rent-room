@@ -6,7 +6,7 @@ import {
 
 export const INITIAL_STATE = {
   loading: false,
-  data: null,
+  rooms: null,
   errorMessage: '',
 };
 
@@ -15,7 +15,7 @@ const initReducer = (state = INITIAL_STATE, action) => {
     case FETCH_DATA:
       return { ...state, loading: true };
     case FETCH_DATA_SUCCESS:
-      return { ...state, loading: false, data: action.payload };
+      return { ...state, loading: false, rooms: action.payload };
     case FETCH_DATA_FAILURE:
       return { ...state, loading: false, errorMessage: action.payload };
     default:

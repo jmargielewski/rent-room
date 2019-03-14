@@ -16,7 +16,7 @@ export const fetchData = data => async (dispatch) => {
   try {
     const response = await api.get('/test/');
     if (response.status === 200) {
-      dispatch(fetchDataSuccess(response.data));
+      dispatch(fetchDataSuccess(response.data.results));
     } else {
       console.error('ERROR', response.status);
     }
