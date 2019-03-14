@@ -11,10 +11,10 @@ const fetchDataFailure = err => ({
   payload: err,
 });
 
-export const fetchdata = data => async (dispatch) => {
+export const fetchData = data => async (dispatch) => {
   dispatch({ type: FETCH_DATA });
   try {
-    const response = await api.get('/');
+    const response = await api.get('/test/');
     if (response.status === 200) {
       dispatch(fetchDataSuccess(response.data));
     } else {
